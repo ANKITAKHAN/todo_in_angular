@@ -1,0 +1,125 @@
+.container { 
+    display: block; 
+    width: 500px; 
+    margin: 50px auto 0; 
+  } 
+    
+  ul { 
+    margin: 0; 
+    /* padding: 0;  */
+    padding: 100px 0 10px 5px;
+  } 
+    
+  li * { 
+    float: left; 
+    
+  } 
+    
+  li, 
+  h3 { 
+    clear: both; 
+    list-style: none;
+
+  } 
+    
+  button { 
+    background: none; 
+    border: 0px; 
+    color: #888; 
+    font-size: 15px; 
+    width: 100px; 
+    margin: 10px 0 0; 
+    font-family: Lato, sans-serif; 
+    cursor: pointer; 
+    text-transform: uppercase; 
+    outline: none;
+  } 
+    
+
+  button:hover { 
+    color: rgba(7, 145, 87, 0.555); 
+  } 
+    
+  /* Heading */
+  h3, 
+  label[for='new-task'] { 
+    color: #333; 
+    font-weight: 700; 
+    font-size: 15px; 
+    border-bottom: 2px solid #333; 
+    padding: 30px 0 10px; 
+    margin: 0; 
+    text-transform: uppercase; 
+  } 
+
+  .todo{
+    background: none; 
+    border: none; 
+    color: #888; 
+    font-size: 15px; 
+    width: 100%; 
+    margin: 10px 0 0; 
+    font-family: Lato, sans-serif; 
+    cursor: pointer; 
+    text-transform: uppercase; 
+  }
+    
+  input[type="text"] { 
+    margin: 0; 
+    font-size: 18px; 
+    line-height: 18px; 
+    height: 18px; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    background: #fff; 
+    border-radius: 6px; 
+    font-family: Lato, sans-serif; 
+    color: #888; 
+    outline: none;
+  } 
+    
+  input[type="text"]:focus { 
+    color: #333; 
+  } 
+    
+  .middle { 
+    text-align: center; 
+  } 
+    
+    
+  /* New Task */
+  label[for='new-task'] { 
+    display: block; 
+    margin: 0 0 20px; 
+  } 
+    
+  input#new-task {  /* changes done */
+    float: left; 
+    width: 318px; 
+    margin-left: 30px;
+  } 
+    
+  p>button:hover { 
+    color: #0FC57C; 
+  } 
+    
+  #results,#completed-tasks
+  {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 0px 0px 30px;
+  background: #eee;
+  font-size: 15px;
+  transition: 0.2s;
+  display: block;
+  }
+
+  /* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}

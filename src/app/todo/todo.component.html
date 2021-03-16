@@ -1,0 +1,24 @@
+<div class="container"> 
+    <p> 
+    <label for="new-task" class="middle">Add Task</label>
+    <input id="new-task" type="text" [(ngModel)]="task" placeholder="Enter a new todo"> 
+    <button (click)="addtodo()">Add Task</button>
+    </p>  
+
+    <h3 class="middle">Completed Todos</h3> 
+    <button class="todo" (click)="complete()">Click me to view Completed Todo</button>
+    <ul id="completed-tasks" *ngFor="let todo of completelist">
+        <li>{{todo}}</li>
+        <!-- <li></li> -->
+    </ul>
+
+    <h3 class="middle">Todo Lists</h3> 
+    <button class="todo" (click)="todo()">Click me to view Todo</button>
+    <ul id="results" *ngFor="let todo of list">
+        <li>{{todo.id}} &ensp; {{todo.title}}</li>
+        <!-- <li></li> -->
+    </ul>
+
+    <h3 class="middle">Play with Window</h3> 
+    <button class="todo" (click)="play()">Click me to play with window info</button>
+  </div> 
